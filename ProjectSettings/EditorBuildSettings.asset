@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tutorial/test scene.unity
     guid: c88b5f38956ef304caf67e6fdbba0eed
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b1859d94e9b33894da32d186f7f216ea,
+      type: 2}
