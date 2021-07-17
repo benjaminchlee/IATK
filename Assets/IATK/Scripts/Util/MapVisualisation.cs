@@ -1,3 +1,4 @@
+/*
 using IATK;
 
 using Mapbox.Unity.Map;
@@ -17,7 +18,7 @@ public class MapVisualisation : MonoBehaviour
     public CSVDataSource mySourceData;
 
 
-    //private  variables 
+    //private  variables
     private string xExtremeAxis;
     private string zExtremeAxis;
     private string center;
@@ -30,7 +31,7 @@ public class MapVisualisation : MonoBehaviour
 
         Mercator mProj = new Mercator();
 
-        // obtaining the  maximum and minimum latitiude and longitude from the graph 
+        // obtaining the  maximum and minimum latitiude and longitude from the graph
 
         if (_viz == null)
         {
@@ -47,7 +48,7 @@ public class MapVisualisation : MonoBehaviour
         float minlatitude = float.Parse(_viz.dataSource.getOriginalValue(mySourceData[z_data_dim].Data.Min(), z_data_dim) + "");
 
 
-        //GeoCoordinate 
+        //GeoCoordinate
         float[] topLeft = mProj.latLonToMeters(minlatitude, minlongitute);
         float[] topright = mProj.latLonToMeters(minlatitude, maxlongitute);
         float[] bottomLeft = mProj.latLonToMeters(maxlatitude, minlongitute);
@@ -90,30 +91,30 @@ public class MapVisualisation : MonoBehaviour
 
         Debug.Log("ExtremeValue: " + center + " - " + xExtremeAxis + " - " + zExtremeAxis);
 
-        // coverting the coordinates into geolocation 
+        // coverting the coordinates into geolocation
         Vector3 xExtremeAxisGeo = _map.GeoToWorldPosition(Conversions.StringToLatLon(xExtremeAxis), true);
         Vector3 zExtremeAxisGeo = _map.GeoToWorldPosition(Conversions.StringToLatLon(zExtremeAxis), true);
         Vector3 centerGeo = _map.GeoToWorldPosition(Conversions.StringToLatLon(center), true);
 
-        // Assigning the position to the visulization by making center of the visulization fixed  
+        // Assigning the position to the visulization by making center of the visulization fixed
 
         Vector3 mapPos = _map.transform.position;
         _viz.transform.position = centerGeo;
         _map.transform.position = mapPos;
-        // calculating the length of x and z axis for width and depth of the graph respectively  
+        // calculating the length of x and z axis for width and depth of the graph respectively
         var width = (centerGeo - zExtremeAxisGeo).magnitude;
         var Depth = (centerGeo - xExtremeAxisGeo).magnitude;
         _viz.width = width;
         _viz.depth = Depth;
         //_map.
         //  height of the graph
-        // when z-axis is not defined 
+        // when z-axis is not defined
         if (_viz.zDimension.Attribute == "Undefined")
         {
             _viz.height = _map.Options.locationOptions.zoom / 5;
 
         }
-        else // when z-axis is defined 
+        else // when z-axis is defined
         {
             _viz.height = _viz.zDimension.maxScale;
 
@@ -122,7 +123,7 @@ public class MapVisualisation : MonoBehaviour
 
         _viz.gameObject.GetComponent<ScatterplotVisualisation>().UpdateVisualisationAxes(AbstractVisualisation.PropertyType.Scaling);
 
-        // function for map update 
+        // function for map update
         _map.OnUpdated += delegate
         {
             UpdateMap();
@@ -168,3 +169,4 @@ public class MapVisualisation : MonoBehaviour
         return Mathf.Sqrt(Mathf.Pow(x2 - x1, 2) + Mathf.Pow(y2 - y1, 2));
     }
 }
+*/
