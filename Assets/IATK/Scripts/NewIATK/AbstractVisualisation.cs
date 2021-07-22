@@ -46,6 +46,11 @@ namespace NewIATK
         // VisualisationLength
     }
 
+    public enum IATKVisualisationType
+    {
+        Scatterplot
+    }
+
     public abstract class AbstractVisualisation : MonoBehaviour
     {
         [HideInInspector] public Visualisation VisualisationReference;
@@ -58,7 +63,7 @@ namespace NewIATK
         public AttributeFilter ZDimension { get; private set; } = new AttributeFilter() { Name = "Undefined" };
         public Color Colour { get; private set; } = Color.white;
         public string ColourBy { get; private set; } = "Undefined";
-        public Gradient ColourScale { get; private set; } = new Gradient();
+        public Gradient ColourGradient { get; private set; } = new Gradient();
         public float Size { get; private set; } = 0.3f;
         public string SizeBy { get; private set; } = "Undefined";
         public Vector3 Scale { get; private set; } = Vector3.one;
@@ -67,6 +72,8 @@ namespace NewIATK
         protected bool isInitialised = false;
 
         protected static string serialisedObjectPath = "SerializedFields";
+
+        public abstract IATKVisualisationType VisualisationType { get; }
 
         protected void Awake()
         {
@@ -88,7 +95,10 @@ namespace NewIATK
             YDimension = visualisationReference.YDimension;
             ZDimension = visualisationReference.ZDimension;
             Colour = visualisationReference.Colour;
+            ColourBy = visualisationReference.ColourBy;
+            ColourGradient = visualisationReference.ColourGradient;
             Size = visualisationReference.Size;
+            SizeBy = visualisationReference.SizeBy;
         }
 
         protected Axis CreateAxis(IATKDimension dimension)
@@ -236,7 +246,7 @@ namespace NewIATK
         {
             if (!InheritFromParent(IATKProperty.ColourGradient, breakInheritance))
             {
-                ColourScale = colourGradient;
+                ColourGradient = colourGradient;
                 UpdateView(IATKProperty.ColourGradient);
             }
         }

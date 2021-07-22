@@ -28,6 +28,7 @@ namespace NewIATK
         private Visualisation targetVisualisation;
         private DataSource dataSource;
         private string undefinedString = "Undefined";
+        private Dictionary<AbstractVisualisation, Editor> abstractVisualisationEditors;
 
         private string[] dimensions;
         private IATKProperty dirtyFlag;
@@ -46,6 +47,8 @@ namespace NewIATK
             sizeProperty = serializedObject.FindProperty("Size");
             sizeByProperty = serializedObject.FindProperty("SizeBy");
             scaleProperty = serializedObject.FindProperty("Scale");
+
+            abstractVisualisationEditors = new Dictionary<AbstractVisualisation, Editor>();
 
             LoadDataSource();
         }
@@ -133,12 +136,37 @@ namespace NewIATK
                 {
                     targetVisualisation.CreateScatterplot();
                 }
+
+                for (int i = 0; i < targetVisualisation.SubVisualisations.Count; i++)
+                {
+                    if (targetVisualisation.SubVisualisations[i] == null)
+                    {
+                        EditorGUILayout.LabelField("Null visualisation");
+                    }
+                    else
+                    {
+                        var vis = targetVisualisation.SubVisualisations[i];
+                        EditorGUILayout.LabelField(vis.VisualisationType.ToString());
+                        EditorGUI.indentLevel++;
+                        FindEditorFor(vis).OnInspectorGUI();
+                        EditorGUI.indentLevel--;
+                    }
+                }
             }
 
             serializedObject.ApplyModifiedProperties();
 
             UpdateVisualisationProperty(dirtyFlag);
 
+        }
+
+        private Editor FindEditorFor(AbstractVisualisation visualisation) {
+            Editor visEditor;
+            if(!abstractVisualisationEditors.TryGetValue(visualisation, out visEditor)) {
+                visEditor = CreateEditor(visualisation);
+                abstractVisualisationEditors[visualisation] = visEditor;
+            }
+            return visEditor;
         }
 
         private void UpdateVisualisationProperty(IATKProperty property)

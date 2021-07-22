@@ -7,11 +7,14 @@ namespace NewIATK
     [ExecuteInEditMode]
     public class ScatterplotVisualisation : AbstractVisualisation
     {
+        public override IATKVisualisationType VisualisationType { get { return IATKVisualisationType.Scatterplot; } }
+
         public override void CreateView(Visualisation visualisationReference)
         {
             VisualisationReference = visualisationReference;
             SetDataSource(visualisationReference.DataSource);
 
+            // Create view if it does not yet exist
             if (View == null)
             {
                 GameObject viewHolder = new GameObject("View");
@@ -21,7 +24,7 @@ namespace NewIATK
                 View = viewHolder.AddComponent<View>();
             }
 
-            // Create
+            // Create material and view
             Material material = new Material(Shader.Find("IATK/OutlineDots"));
             material.mainTexture = Resources.Load("circle-outline-basic") as Texture2D;
             material.renderQueue = 3000;
@@ -38,10 +41,8 @@ namespace NewIATK
 
             if (XDimension.Name != "Undefined")
                 CreateAxis(IATKDimension.X);
-
             if (YDimension.Name != "Undefined")
                 CreateAxis(IATKDimension.Y);
-
             if (ZDimension.Name != "Undefined")
                 CreateAxis(IATKDimension.Z);
 
@@ -227,7 +228,7 @@ namespace NewIATK
             Color[] colours = new Color[data.Length];
             for (int i = 0; i < data.Length; ++i)
             {
-                colours[i] = ColourScale.Evaluate(data[i]);
+                colours[i] = ColourGradient.Evaluate(data[i]);
             }
             return colours;
         }
