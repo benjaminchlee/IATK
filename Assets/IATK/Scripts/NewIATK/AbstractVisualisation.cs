@@ -26,7 +26,11 @@ namespace NewIATK
         SizeBy,
         DimensionChange,
         AttributeFiltering,
-        Scale
+        Scale,
+        // Scatterplot specific properties
+        ColourPalette,
+        ColourPaletteBy
+
         // GeometryType,
         // LinkingDimension,
         // OriginDimension,
@@ -53,20 +57,22 @@ namespace NewIATK
 
     public abstract class AbstractVisualisation : MonoBehaviour
     {
-        [HideInInspector] public Visualisation VisualisationReference;
-        [HideInInspector] public View View;
-        [HideInInspector] public Axis XAxis, YAxis, ZAxis;
+        [field: SerializeField] public Visualisation VisualisationReference { get; protected set; }
+        [field: SerializeField] public View View { get; protected set; }
+        [field: SerializeField] public Axis XAxis  { get; protected set; }
+        [field: SerializeField] public Axis YAxis  { get; protected set; }
+        [field: SerializeField] public Axis ZAxis  { get; protected set; }
 
-        public DataSource DataSource { get; private set; }
-        public AttributeFilter XDimension { get; private set; } = new AttributeFilter() { Name = "Undefined" };
-        public AttributeFilter YDimension { get; private set; } = new AttributeFilter() { Name = "Undefined" };
-        public AttributeFilter ZDimension { get; private set; } = new AttributeFilter() { Name = "Undefined" };
-        public Color Colour { get; private set; } = Color.white;
-        public string ColourBy { get; private set; } = "Undefined";
-        public Gradient ColourGradient { get; private set; } = new Gradient();
-        public float Size { get; private set; } = 0.3f;
-        public string SizeBy { get; private set; } = "Undefined";
-        public Vector3 Scale { get; private set; } = Vector3.one;
+        [field: SerializeField] public DataSource DataSource { get; protected set; }
+        [field: SerializeField] public AttributeFilter XDimension { get; protected set; } = new AttributeFilter() { Name = "Undefined" };
+        [field: SerializeField] public AttributeFilter YDimension { get; protected set; } = new AttributeFilter() { Name = "Undefined" };
+        [field: SerializeField] public AttributeFilter ZDimension { get; protected set; } = new AttributeFilter() { Name = "Undefined" };
+        [field: SerializeField] public Color Colour { get; protected set; } = Color.white;
+        [field: SerializeField] public string ColourBy { get; protected set; } = "Undefined";
+        [field: SerializeField] public Gradient ColourGradient { get; protected set; } = new Gradient();
+        [field: SerializeField] public float Size { get; protected set; } = 0.3f;
+        [field: SerializeField] public string SizeBy { get; protected set; } = "Undefined";
+        [field: SerializeField] public Vector3 Scale { get; protected set; } = Vector3.one;
 
         protected Dictionary<IATKProperty, bool> inheritanceDictionary;
         protected bool isInitialised = false;
@@ -159,9 +165,23 @@ namespace NewIATK
             axis.UpdateMaxNormaliser(attributeFilter.MaxScale);
         }
 
-        protected void UpdateAxisLength(IATKDimension length)
+        protected void UpdateAxisLength(IATKDimension dimension)
         {
-
+            switch (dimension)
+            {
+                case IATKDimension.X:
+                    if (XAxis != null)
+                        XAxis.UpdateLength(Scale.x);
+                    break;
+                case IATKDimension.Y:
+                    if (YAxis != null)
+                        YAxis.UpdateLength(Scale.y);
+                    break;
+                case IATKDimension.Z:
+                    if (ZAxis != null)
+                        ZAxis.UpdateLength(Scale.z);
+                    break;
+            }
         }
 
         protected void DestroyAxis(IATKDimension dimension)
