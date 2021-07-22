@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace NewIATK
@@ -8,6 +9,9 @@ namespace NewIATK
     public class ScatterplotVisualisation : AbstractVisualisation
     {
         public override IATKVisualisationType VisualisationType { get { return IATKVisualisationType.Scatterplot; } }
+
+        [field: SerializeField] public string ColourPaletteBy { get; protected set; }
+        [field: SerializeField] public Color[] ColourPalette { get; protected set; }
 
         public override void CreateView(Visualisation visualisationReference)
         {
@@ -146,16 +150,31 @@ namespace NewIATK
                     break;
 
                 case IATKProperty.Scale:
-                    if (XAxis != null)
-                        XAxis.UpdateLength(Scale.x);
-                    if (YAxis != null)
-                        YAxis.UpdateLength(Scale.y);
-                    if (ZAxis != null)
-                        ZAxis.UpdateLength(Scale.z);
+                    UpdateAxisLength(IATKDimension.X);
+                    UpdateAxisLength(IATKDimension.Y);
+                    UpdateAxisLength(IATKDimension.Z);
                     View.transform.localScale = Scale;
                     break;
 
+                case IATKProperty.ColourPalette:
+                    if (ColourPaletteBy != "Undefined")
+                        View.SetColours(MapColoursPalette(DataSource[ColourPaletteBy].Data));
+                    else
+                        UpdateView(IATKProperty.Colour);
+                    break;
             }
+        }
+
+        public void SetColourPalette(Color[] palette)
+        {
+            ColourPalette = palette;
+            UpdateView(IATKProperty.ColourPalette);
+        }
+
+        public void SetColourPaletteBy(string attribute)
+        {
+            ColourPaletteBy = attribute;
+            UpdateView(IATKProperty.ColourPalette);
         }
 
         #region Visualisation Specific Methods
@@ -229,6 +248,27 @@ namespace NewIATK
             for (int i = 0; i < data.Length; ++i)
             {
                 colours[i] = ColourGradient.Evaluate(data[i]);
+            }
+            return colours;
+        }
+
+        private Color[] MapColoursPalette(float[] data)
+        {
+            Color[] colours = new Color[data.Length];
+            List<float> uniqueValues = data.Distinct().ToList();
+
+            // If the length of the colour palette does not match the distinct values, recreate the colour palette
+            if (uniqueValues.Count != ColourPalette.Length)
+            {
+                ColourPalette = new Color[uniqueValues.Count];
+                for (int i = 0; i < uniqueValues.Count; i++)
+                    ColourPalette[i] = Colour;
+            }
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                int indexColor = uniqueValues.IndexOf(data[i]);
+                colours[i] = ColourPalette[indexColor];
             }
             return colours;
         }

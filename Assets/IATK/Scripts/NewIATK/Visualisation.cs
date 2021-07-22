@@ -11,17 +11,17 @@ namespace NewIATK
     [ExecuteInEditMode]
     public class Visualisation : MonoBehaviour
     {
-        public string UID;
-        public DataSource DataSource;
-        public AttributeFilter XDimension = new AttributeFilter { Name = "Undefined" };
-        public AttributeFilter YDimension = new AttributeFilter { Name = "Undefined" };
-        public AttributeFilter ZDimension = new AttributeFilter { Name = "Undefined" };
-        public Color Colour = Color.white;
-        public string ColourBy = "Undefined";
-        public Gradient ColourGradient = new Gradient();
-        [Range(0, 1)] public float Size = 0.3f;
-        public string SizeBy = "Undefined";
-        public Vector3 Scale = Vector3.one;
+        [field:SerializeField] public string UID { get; private set; }
+        [field:SerializeField] public DataSource DataSource { get; private set; }
+        [field:SerializeField] public AttributeFilter XDimension { get; private set; } = new AttributeFilter { Name = "Undefined" };
+        [field:SerializeField] public AttributeFilter YDimension { get; private set; } = new AttributeFilter { Name = "Undefined" };
+        [field:SerializeField] public AttributeFilter ZDimension { get; private set; } = new AttributeFilter { Name = "Undefined" };
+        [field:SerializeField] public Color Colour { get; private set; } = Color.white;
+        [field:SerializeField] public string ColourBy { get; private set; } = "Undefined";
+        [field:SerializeField] public Gradient ColourGradient { get; private set; } = new Gradient();
+        [field:SerializeField] public float Size { get; private set; } = 0.3f;
+        [field:SerializeField] public string SizeBy { get; private set; } = "Undefined";
+        [field:SerializeField] public Vector3 Scale { get; private set; } = Vector3.one;
 
         public List<AbstractVisualisation> SubVisualisations = new List<AbstractVisualisation>();
 
