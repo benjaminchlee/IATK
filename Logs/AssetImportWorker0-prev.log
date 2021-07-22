@@ -15,11 +15,11 @@ F:/Unity Projects/IATK
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53708
+60817
 Successfully changed project path to: F:/Unity Projects/IATK
 F:/Unity Projects/IATK
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 22.07 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 22.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -36,890 +36,226 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001628 seconds.
+Registered in 0.001580 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 21.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 22.08 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
+- Completed reload, in  0.788 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001234 seconds.
+Registered in 0.001124 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.792 seconds
+- Completed reload, in  0.667 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1175 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 63.2 MB.
-System memory in use after: 63.3 MB.
+Unloading 1177 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.3 MB.
+System memory in use after: 63.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1624.
-Total: 1.673100 ms (FindLiveObjects: 0.131400 ms CreateObjectMapping: 0.028100 ms MarkObjects: 1.448000 ms  DeleteObjects: 0.064500 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 1.450600 ms (FindLiveObjects: 0.129300 ms CreateObjectMapping: 0.027200 ms MarkObjects: 1.243200 ms  DeleteObjects: 0.049900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/IATK/Scripts/NewIATK/Visualisation.cs
-  artifactKey: Guid(18c75fab964c1044eacb0f91620c0b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Visualisation.cs using Guid(18c75fab964c1044eacb0f91620c0b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873b502add4a1233e6e3d1139ab22b6c') in 0.019990 seconds
-  Import took 0.021757 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001148 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.609 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1627.
-Total: 1.297400 ms (FindLiveObjects: 0.119100 ms CreateObjectMapping: 0.025100 ms MarkObjects: 1.138900 ms  DeleteObjects: 0.013600 ms)
+  path: Assets/IATK/Datasets
+  artifactKey: Guid(b530af72b19798e498b279d9e25ee8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Datasets using Guid(b530af72b19798e498b279d9e25ee8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cf022a58bd94e452e957fb952e4f1b') in 0.007063 seconds
+  Import took 0.008578 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 63.494604 seconds.
-  path: Assets/IATK/Scripts/NewIATK/Visualisation.cs
-  artifactKey: Guid(18c75fab964c1044eacb0f91620c0b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Visualisation.cs using Guid(18c75fab964c1044eacb0f91620c0b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0030cc503517d1c9c0c3ec83beb2745') in 0.003241 seconds
-  Import took 0.004691 seconds .
+  Time since last request: 0.000194 seconds.
+  path: Assets/IATK
+  artifactKey: Guid(ea1a7c0f58a64b84081a9eef3d0faa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK using Guid(ea1a7c0f58a64b84081a9eef3d0faa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbd6b618f3817b553f3ef8e6c03d4bb') in 0.009120 seconds
+  Import took 0.010588 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001130 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1630.
-Total: 1.202600 ms (FindLiveObjects: 0.106500 ms CreateObjectMapping: 0.025000 ms MarkObjects: 1.060000 ms  DeleteObjects: 0.010400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001128 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.595 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1633.
-Total: 1.270500 ms (FindLiveObjects: 0.122700 ms CreateObjectMapping: 0.023800 ms MarkObjects: 1.107700 ms  DeleteObjects: 0.015500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001696 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.598 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1636.
-Total: 1.268500 ms (FindLiveObjects: 0.123600 ms CreateObjectMapping: 0.024400 ms MarkObjects: 1.105700 ms  DeleteObjects: 0.014000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001158 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.605 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1639.
-Total: 1.349500 ms (FindLiveObjects: 0.139200 ms CreateObjectMapping: 0.026500 ms MarkObjects: 1.164500 ms  DeleteObjects: 0.018600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001123 seconds.
+Registered in 0.001547 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.615 seconds
+- Completed reload, in  0.841 seconds
 Platform modules already initialized, skipping
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1642.
-Total: 1.333700 ms (FindLiveObjects: 0.129500 ms CreateObjectMapping: 0.025000 ms MarkObjects: 1.164700 ms  DeleteObjects: 0.013600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001086 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.599 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.6 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1645.
-Total: 1.352100 ms (FindLiveObjects: 0.113700 ms CreateObjectMapping: 0.028100 ms MarkObjects: 1.194700 ms  DeleteObjects: 0.014600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001110 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.615 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.7 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1648.
-Total: 1.264600 ms (FindLiveObjects: 0.121600 ms CreateObjectMapping: 0.024100 ms MarkObjects: 1.102700 ms  DeleteObjects: 0.015500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001190 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.628 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 60.7 MB.
 System memory in use after: 60.8 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1651.
-Total: 1.215100 ms (FindLiveObjects: 0.114400 ms CreateObjectMapping: 0.025000 ms MarkObjects: 1.064600 ms  DeleteObjects: 0.010200 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 2.176800 ms (FindLiveObjects: 0.262700 ms CreateObjectMapping: 0.032700 ms MarkObjects: 1.857300 ms  DeleteObjects: 0.021500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001168 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.636 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1654.
-Total: 1.293000 ms (FindLiveObjects: 0.140400 ms CreateObjectMapping: 0.026600 ms MarkObjects: 1.111200 ms  DeleteObjects: 0.013900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001320 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.613 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1657.
-Total: 1.431300 ms (FindLiveObjects: 0.129900 ms CreateObjectMapping: 0.025600 ms MarkObjects: 1.260600 ms  DeleteObjects: 0.014000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001152 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.597 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1660.
-Total: 1.302300 ms (FindLiveObjects: 0.130200 ms CreateObjectMapping: 0.026700 ms MarkObjects: 1.130200 ms  DeleteObjects: 0.014300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001205 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.593 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1663.
-Total: 1.253000 ms (FindLiveObjects: 0.107200 ms CreateObjectMapping: 0.027100 ms MarkObjects: 1.106200 ms  DeleteObjects: 0.011700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001180 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.602 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1666.
-Total: 1.231400 ms (FindLiveObjects: 0.130100 ms CreateObjectMapping: 0.026000 ms MarkObjects: 1.063900 ms  DeleteObjects: 0.010800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001232 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.591 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1669.
-Total: 1.307300 ms (FindLiveObjects: 0.131600 ms CreateObjectMapping: 0.025700 ms MarkObjects: 1.136400 ms  DeleteObjects: 0.013000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001205 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.594 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1672.
-Total: 1.271900 ms (FindLiveObjects: 0.121300 ms CreateObjectMapping: 0.024800 ms MarkObjects: 1.111700 ms  DeleteObjects: 0.013500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.609 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1675.
-Total: 1.198200 ms (FindLiveObjects: 0.113800 ms CreateObjectMapping: 0.025200 ms MarkObjects: 1.048200 ms  DeleteObjects: 0.010200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001143 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.592 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1678.
-Total: 1.263700 ms (FindLiveObjects: 0.126100 ms CreateObjectMapping: 0.025400 ms MarkObjects: 1.101400 ms  DeleteObjects: 0.010100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001220 seconds.
+Registered in 0.001543 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.632 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1681.
-Total: 1.210300 ms (FindLiveObjects: 0.122000 ms CreateObjectMapping: 0.025500 ms MarkObjects: 1.051500 ms  DeleteObjects: 0.010100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001059 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.598 seconds
+- Completed reload, in  0.672 seconds
 Platform modules already initialized, skipping
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
 Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 60.7 MB.
 System memory in use after: 60.8 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1684.
-Total: 1.356900 ms (FindLiveObjects: 0.134100 ms CreateObjectMapping: 0.026000 ms MarkObjects: 1.182000 ms  DeleteObjects: 0.014100 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 1.455600 ms (FindLiveObjects: 0.156300 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.251400 ms  DeleteObjects: 0.011700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001143 seconds.
+Registered in 0.001112 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.594 seconds
+- Completed reload, in  0.673 seconds
 Platform modules already initialized, skipping
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 60.7 MB.
 System memory in use after: 60.8 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1687.
-Total: 1.421900 ms (FindLiveObjects: 0.113300 ms CreateObjectMapping: 0.025000 ms MarkObjects: 1.271300 ms  DeleteObjects: 0.011300 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 1.529300 ms (FindLiveObjects: 0.177100 ms CreateObjectMapping: 0.080400 ms MarkObjects: 1.255500 ms  DeleteObjects: 0.015100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001109 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.610 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.7 MB.
-System memory in use after: 60.8 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1690.
-Total: 2.582200 ms (FindLiveObjects: 0.246500 ms CreateObjectMapping: 0.036700 ms MarkObjects: 2.275800 ms  DeleteObjects: 0.021500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001237 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.627 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.8 MB.
-System memory in use after: 60.9 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1693.
-Total: 1.546600 ms (FindLiveObjects: 0.184400 ms CreateObjectMapping: 0.034400 ms MarkObjects: 1.311800 ms  DeleteObjects: 0.015200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001155 seconds.
+Registered in 0.001254 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.609 seconds
+- Completed reload, in  0.654 seconds
 Platform modules already initialized, skipping
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
 Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1145 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.8 MB.
-System memory in use after: 60.9 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1696.
-Total: 1.456600 ms (FindLiveObjects: 0.149800 ms CreateObjectMapping: 0.028000 ms MarkObjects: 1.260700 ms  DeleteObjects: 0.016800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1460.350394 seconds.
-  path: Assets/IATK/Scripts/NewIATK/Editor
-  artifactKey: Guid(59d35a46cbd84954399a748980a393bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Editor using Guid(59d35a46cbd84954399a748980a393bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c0779ef9729b9164987690d5035f1d') in 0.009680 seconds
-  Import took 0.011550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.936876 seconds.
-  path: Assets/IATK/Scripts/NewIATK/Editor/ScatterplotVisualisationEditor.cs
-  artifactKey: Guid(84482f3d1dc86a940a3eab171bb9bd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Editor/ScatterplotVisualisationEditor.cs using Guid(84482f3d1dc86a940a3eab171bb9bd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c4466bce51f7b9bd06cbbc18cbbf92') in 0.008054 seconds
-  Import took 0.009704 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001195 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.611 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1146 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1700.
-Total: 1.317800 ms (FindLiveObjects: 0.115700 ms CreateObjectMapping: 0.025800 ms MarkObjects: 1.161800 ms  DeleteObjects: 0.013900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001122 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1146 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1703.
-Total: 1.328600 ms (FindLiveObjects: 0.146400 ms CreateObjectMapping: 0.030000 ms MarkObjects: 1.137200 ms  DeleteObjects: 0.014200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.320994 seconds.
-  path: Assets/IATK/Scripts/NewIATK/Editor/ScatterplotVisualisationEditor.cs
-  artifactKey: Guid(84482f3d1dc86a940a3eab171bb9bd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Editor/ScatterplotVisualisationEditor.cs using Guid(84482f3d1dc86a940a3eab171bb9bd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776962d3627b896d2b9277292c6fcb5d') in 0.003260 seconds
-  Import took 0.004806 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001233 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.753 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
+System memory in use before: 60.7 MB.
+System memory in use after: 60.8 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1707.
-Total: 2.200100 ms (FindLiveObjects: 0.306200 ms CreateObjectMapping: 0.053200 ms MarkObjects: 1.823900 ms  DeleteObjects: 0.014900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1010.503359 seconds.
-  path: Assets/IATK/Scripts/NewIATK/Editor/IATKEditor.cs
-  artifactKey: Guid(bd5d0b6c6b37f4849b3af7edd9d2e9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Editor/IATKEditor.cs using Guid(bd5d0b6c6b37f4849b3af7edd9d2e9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ae0ae1be487aad612008bfeb11f1ed') in 0.009913 seconds
-  Import took 0.011628 seconds .
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1638.
+Total: 1.403000 ms (FindLiveObjects: 0.136400 ms CreateObjectMapping: 0.026500 ms MarkObjects: 1.216000 ms  DeleteObjects: 0.022600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001143 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.593 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1710.
-Total: 1.242600 ms (FindLiveObjects: 0.118400 ms CreateObjectMapping: 0.025700 ms MarkObjects: 1.087000 ms  DeleteObjects: 0.010800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 285.128247 seconds.
-  path: Assets/IATK/Scripts/NewIATK/Editor/IATKEditor.cs
-  artifactKey: Guid(bd5d0b6c6b37f4849b3af7edd9d2e9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/IATK/Scripts/NewIATK/Editor/IATKEditor.cs using Guid(bd5d0b6c6b37f4849b3af7edd9d2e9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e698e389c9c86dbf138016939f2a32') in 0.003235 seconds
-  Import took 0.004580 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001168 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.591 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1713.
-Total: 1.364800 ms (FindLiveObjects: 0.149200 ms CreateObjectMapping: 0.027600 ms MarkObjects: 1.174600 ms  DeleteObjects: 0.012200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001116 seconds.
+Registered in 0.001247 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.604 seconds
+- Completed reload, in  0.726 seconds
 Platform modules already initialized, skipping
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
+System memory in use before: 60.7 MB.
+System memory in use after: 60.8 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1716.
-Total: 1.270600 ms (FindLiveObjects: 0.121700 ms CreateObjectMapping: 0.026000 ms MarkObjects: 1.110600 ms  DeleteObjects: 0.011400 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 1.444900 ms (FindLiveObjects: 0.190700 ms CreateObjectMapping: 0.027900 ms MarkObjects: 1.211300 ms  DeleteObjects: 0.013900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1924.261416 seconds.
+  path: Assets/IATK/Resources/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Resources/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502db22edc841df1d5d7c849cee20db5') in 0.361381 seconds
+  Import took 0.363514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.103476 seconds.
+  path: Assets/IATK/Resources/Key.prefab
+  artifactKey: Guid(4cb7a4e933cb32646aa7d27530a664ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Resources/Key.prefab using Guid(4cb7a4e933cb32646aa7d27530a664ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5865204eff4394b8e3eb1c6d16bfec54') in 0.008814 seconds
+  Import took 0.010707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.256422 seconds.
+  path: Assets/IATK/Resources/NewAxis.prefab
+  artifactKey: Guid(3ae79f79717fbb240858cd15f36d5de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Resources/NewAxis.prefab using Guid(3ae79f79717fbb240858cd15f36d5de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e01401c96aae51adfaae4b0dc116cc') in 0.028796 seconds
+  Import took 0.030700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.770247 seconds.
+  path: Assets/IATK/Scripts/NewIATK/AbstractVisualisation.cs
+  artifactKey: Guid(8fd6e9cf6a1a64c4d8430a8723cfe815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Scripts/NewIATK/AbstractVisualisation.cs using Guid(8fd6e9cf6a1a64c4d8430a8723cfe815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ce3af0a714ba8f5ac73334a7bfb2ba') in 0.009018 seconds
+  Import took 0.010725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.414227 seconds.
+  path: Assets/IATK/Scripts/NewIATK/AttributeFilter.cs
+  artifactKey: Guid(8099a28825b7e584bb65a86dfaabd51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Scripts/NewIATK/AttributeFilter.cs using Guid(8099a28825b7e584bb65a86dfaabd51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107256cbfd4ae73ce0d4d0abdbc6a02c') in 0.006919 seconds
+  Import took 0.008826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.315069 seconds.
+  path: Assets/IATK/Scripts/NewIATK/View.cs
+  artifactKey: Guid(9b5315be8565c824a913765a8970fc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IATK/Scripts/NewIATK/View.cs using Guid(9b5315be8565c824a913765a8970fc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb97f32387e349de0a58f4865f939de') in 0.005994 seconds
+  Import took 0.007852 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001109 seconds.
+Registered in 0.001172 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.603 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1719.
-Total: 1.428700 ms (FindLiveObjects: 0.150100 ms CreateObjectMapping: 0.027300 ms MarkObjects: 1.238800 ms  DeleteObjects: 0.011500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001156 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.601 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.9 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1722.
-Total: 1.228200 ms (FindLiveObjects: 0.116300 ms CreateObjectMapping: 0.026100 ms MarkObjects: 1.074100 ms  DeleteObjects: 0.010600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001008 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.593 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1725.
-Total: 1.327300 ms (FindLiveObjects: 0.138300 ms CreateObjectMapping: 0.025400 ms MarkObjects: 1.149900 ms  DeleteObjects: 0.012600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001099 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.610 seconds
+- Completed reload, in  0.638 seconds
 Platform modules already initialized, skipping
 Shader 'IATK/BarShader': fallback shader 'Transparent' not found
 Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
+System memory in use before: 63.9 MB.
+System memory in use after: 64.0 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1728.
-Total: 1.272200 ms (FindLiveObjects: 0.123800 ms CreateObjectMapping: 0.025800 ms MarkObjects: 1.109500 ms  DeleteObjects: 0.012300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000995 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1731.
-Total: 1.397400 ms (FindLiveObjects: 0.147600 ms CreateObjectMapping: 0.030600 ms MarkObjects: 1.202400 ms  DeleteObjects: 0.015700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001111 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.595 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1734.
-Total: 1.568600 ms (FindLiveObjects: 0.124600 ms CreateObjectMapping: 0.026900 ms MarkObjects: 1.403500 ms  DeleteObjects: 0.012700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001067 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.618 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1737.
-Total: 1.320000 ms (FindLiveObjects: 0.125900 ms CreateObjectMapping: 0.026000 ms MarkObjects: 1.153800 ms  DeleteObjects: 0.013500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001061 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.595 seconds
-Platform modules already initialized, skipping
-Shader 'IATK/BarShader': fallback shader 'Transparent' not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1740.
-Total: 1.247500 ms (FindLiveObjects: 0.134300 ms CreateObjectMapping: 0.025900 ms MarkObjects: 1.076800 ms  DeleteObjects: 0.009800 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1653.
+Total: 1.386800 ms (FindLiveObjects: 0.146200 ms CreateObjectMapping: 0.026800 ms MarkObjects: 1.199600 ms  DeleteObjects: 0.013100 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

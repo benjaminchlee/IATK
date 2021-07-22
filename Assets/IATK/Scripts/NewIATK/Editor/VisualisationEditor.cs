@@ -127,6 +127,11 @@ namespace NewIATK
                     dirtyFlag = IATKProperty.SizeBy;
                 }
 
+                EditorGUI.BeginChangeCheck();
+                EditorGUILayout.PropertyField(scaleProperty);
+                if (EditorGUI.EndChangeCheck())
+                    dirtyFlag = IATKProperty.Scale;
+
                 if (GUILayout.Button("Create Scatterplot"))
                 {
                     targetVisualisation.CreateScatterplot();
