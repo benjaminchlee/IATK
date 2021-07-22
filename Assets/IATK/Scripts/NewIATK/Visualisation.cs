@@ -39,6 +39,20 @@ namespace NewIATK
             SubVisualisations.Add(scatterplot);
         }
 
+        public void CreateBarchart()
+        {
+            GameObject holder = new GameObject("BarVisualisation");
+            holder.transform.parent = transform;
+            holder.transform.localPosition = Vector3.zero;
+            holder.transform.localRotation = Quaternion.identity;
+
+            BarVisualisation bar = holder.AddComponent<BarVisualisation>();
+            bar.TransferProperties(this);
+            bar.CreateView(this);
+
+            SubVisualisations.Add(bar);
+        }
+
         public void VisualisationDestroyed(AbstractVisualisation abstractVisualisation)
         {
             SubVisualisations.Remove(abstractVisualisation);

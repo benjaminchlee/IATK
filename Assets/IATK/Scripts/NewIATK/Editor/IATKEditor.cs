@@ -18,6 +18,8 @@ namespace NewIATK
         protected virtual void OnEnable()
         {
             dataSourceProperty = serializedObject.FindProperty("<DataSource>k__BackingField");
+
+            LoadDataSource();
         }
 
         protected virtual IATKProperty DrawAttributeFilterEditor(SerializedProperty element, Rect rect)

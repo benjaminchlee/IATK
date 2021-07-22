@@ -22,8 +22,6 @@ namespace NewIATK
             targetScatterplot = (ScatterplotVisualisation)serializedObject.targetObject;
             colourPaletteProperty = serializedObject.FindProperty("<ColourPalette>k__BackingField");
             colourPaletteByProperty = serializedObject.FindProperty("<ColourPaletteBy>k__BackingField");
-
-            LoadDataSource();
         }
 
         public override void OnInspectorGUI()

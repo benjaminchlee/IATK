@@ -29,7 +29,11 @@ namespace NewIATK
         Scale,
         // Scatterplot specific properties
         ColourPalette,
-        ColourPaletteBy
+        ColourPaletteBy,
+        // Barchart specific properties
+        NumXBins,
+        NumZBins,
+        BarAggregation
 
         // GeometryType,
         // LinkingDimension,
@@ -52,7 +56,8 @@ namespace NewIATK
 
     public enum IATKVisualisationType
     {
-        Scatterplot
+        Scatterplot,
+        Bar
     }
 
     public abstract class AbstractVisualisation : MonoBehaviour

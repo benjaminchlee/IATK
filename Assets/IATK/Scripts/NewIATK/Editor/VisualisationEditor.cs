@@ -44,8 +44,6 @@ namespace NewIATK
             scaleProperty = serializedObject.FindProperty("<Scale>k__BackingField");
 
             abstractVisualisationEditors = new Dictionary<AbstractVisualisation, Editor>();
-
-            LoadDataSource();
         }
 
         /// <summary>
@@ -135,6 +133,10 @@ namespace NewIATK
                 if (GUILayout.Button("Create Scatterplot"))
                 {
                     targetVisualisation.CreateScatterplot();
+                }
+                if (GUILayout.Button("Create Barchart"))
+                {
+                    targetVisualisation.CreateBarchart();
                 }
 
                 for (int i = 0; i < targetVisualisation.SubVisualisations.Count; i++)
